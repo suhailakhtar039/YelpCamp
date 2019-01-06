@@ -17,8 +17,6 @@ var commentRoutes	=require("./routes/comments"),
 
 // seedDB();//seed the database
 mongoose.connect(process.env.DATABASEURL,{useNewUrlParser:true});
-// mongoose.connect("mongodb://suhailakhtar039:suhail786@ds129914.mlab.com:29914/yelpcamp",{useNewUrlParser:true});
-//mongodb://suhailakhtar39:suhail786@ds129914.mlab.com:29914/yelpcamp
 app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname+"/public"));
